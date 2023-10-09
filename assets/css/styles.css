@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=UnifrakturMaguntia&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  /* Colores */
+  --red: rgb(255, 0, 0);
+  --redd: #cf2e2e;
+  --black: rgb(0, 0, 0);
+  --black2: #02050e;
+  --gris: #292828d8;
+  --gris2: #b2b2be;
+  --white: rgb(255, 255, 255);
+  --white2: #e9e6ed;
+  /* Fonts */
+  --maguntia: "UnifrakturMaguntia", cursive;
+  --antiqua: "Inknut Antiqua", serif;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 900;
+
+  /* Tamaños */
+  --font-xs: 10px;
+  --font-small: 14px;
+  --font-medium: 16px;
+  --font-large: 36px;
+  --font-Extralarge: 42px;
+  --font-Titte: 80px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  font-family: var(--antiqua);
+  color: var(--white2);
+  height: 80px;
+  background: var(--black);
+}
+
+.Logo {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.list-navbar {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 20px;
+}
+
+.list-navbar a {
+  color: var(--white2);
+  font-size: var(--font-small);
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.page-tittle {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  background: var(--gris2);
+}
+
+.tittle {
+  font-family: var(--maguntia);
+  font-size: var(--font-Titte);
+  padding: 20px 0px;
+}
+
+.menu-productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: var(--red);
+}
+.list-product {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  font-family: var(--antiqua);
+  font-size: var(--font-medium);
+}
+
+.list-product a {
+  color: var(--white2);
+}
+.presentacion {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background: var(--white);
+}
+
+.presentacion--img {
+  width: 80%;
+  padding: 10px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin-top: 20px;
+  font-family: var(--antiqua);
+}
+.about h2 {
+  font-size: var(--font-large);
+  font-weight: var(--font-bold);
+  color: var(--redd);
+}
+
+.about p {
+  font-size: var(--font-medium);
+}
+
+/* Herramientas */
+
+.herramientas {
+  border: 1px solid rgb(60, 255, 0);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: var(--antiqua);
+}
+
+.herramientas--tittle {
+  border: 1px solid rgb(60, 255, 0);
+  background: var(--red);
+  color: var(--white2);
+}
+
+.herramientas--productos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card-product {
+  border: 1px solid rgb(60, 255, 0);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 200px;
+  height: 300px;
+}
+
+.product-img .img {
+  width: 100px;
+  height: 100px;
+}

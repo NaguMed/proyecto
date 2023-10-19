@@ -15,6 +15,7 @@
   --black2: #02050e;
   --gris: #292828d8;
   --gris2: #b2b2be;
+  --gris3: #fdf9f9;
   --white: rgb(255, 255, 255);
   --white2: #e9e6ed;
   /* Fonts */
@@ -179,6 +180,7 @@ main {
   text-align: center;
   width: 200px;
   height: 350px;
+  background: var(--gris3);
 }
 
 .product-img .img {

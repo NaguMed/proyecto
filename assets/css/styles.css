@@ -28,6 +28,7 @@
   --font-black: 900;
 
   /* Tamaños */
+  --font-xxs: 8px;
   --font-xs: 10px;
   --font-small: 14px;
   --font-medium: 16px;
@@ -42,6 +43,7 @@ header {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  position: fixed;
   width: 100%;
   font-family: var(--antiqua);
   color: var(--white2);
@@ -75,6 +77,10 @@ header {
   font-size: var(--font-small);
 }
 
+.list-navbar a:hover {
+  border-bottom: 3px solid var(--gris2);
+  color: var(--redd);
+}
 /* Main */
 
 main {
@@ -90,6 +96,7 @@ main {
   height: 120px;
   text-align: center;
   background: var(--gris2);
+  margin-top: 80px;
 }
 
 .tittle {
@@ -117,6 +124,10 @@ main {
 
 .list-product a {
   color: var(--white2);
+}
+
+.list-product a:hover {
+  border-bottom: 3px solid var(--gris2);
 }
 .presentacion {
   margin-top: 20px;
@@ -151,44 +162,100 @@ main {
   font-size: var(--font-medium);
 }
 
-/* Herramientas */
+/* Botones */
+.btn {
+  padding: 2px 3px;
+  border-radius: 4px;
+  background-color: var(--redd);
+  font-family: var(--antiqua);
+  font-size: var(--font-xxs);
+  color: var(--white);
+}
 
-.herramientas {
+.btn-scroll {
+  font-family: var(--antiqua);
+  font-size: var(--font-medium);
+  background-color: var(--redd);
+  color: var(--white);
+  padding: 0 15px;
+  border-radius: 6px;
+}
+/* Secciones Productos*/
+
+.herramientas,
+.Cristaleria,
+.Bebidas {
   display: flex;
   flex-direction: column;
   width: 100%;
   font-family: var(--antiqua);
 }
 
-.herramientas--tittle {
+.herramientas--tittle,
+.Cristaleria--tittle,
+.Bebidas--tittle {
   background: var(--red);
   color: var(--white2);
   padding: 0px 5px;
 }
 
-.herramientas--productos {
+.herramientas--productos,
+.Cristaleria--productos,
+.Bebidas--productos {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  max-width: 1000px;
   gap: 30px;
-  margin-top: 20px;
+  margin: 20px auto;
 }
+
+/* Card */
 
 .card-product {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 200px;
+  width: 300px;
   height: 350px;
   background: var(--gris3);
+  border-radius: 10px;
 }
 
 .product-img .img {
   width: 100px;
   height: 100px;
+  margin: 10px auto;
 }
 
 .product-info {
   display: flex;
   flex-direction: column;
+}
+.product-info span {
+  font-size: var(--font-medium);
+  font-weight: var(--font-black);
+}
+
+/* seccion eventos */
+
+.eventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin-top: 40px;
+  font-family: var(--antiqua);
+}
+
+.eventos h2 {
+  font-size: var(--font-large);
+  font-weight: var(--font-bold);
+  color: var(--redd);
+}
+
+.eventos p {
+  font-size: var(--font-medium);
 }

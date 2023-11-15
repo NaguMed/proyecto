@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=UnifrakturMaguntia&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  /* Colores */
+  --red: rgb(255, 0, 0);
+  --redd: #cf2e2e;
+  --black: rgb(0, 0, 0);
+  --black2: #02050e;
+  --gris: #292828d8;
+  --gris2: #b2b2be;
+  --gris3: #fdf9f9;
+  --white: rgb(255, 255, 255);
+  --white2: #e9e6ed;
+  /* Fonts */
+  --maguntia: "UnifrakturMaguntia", cursive;
+  --antiqua: "Inknut Antiqua", serif;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 900;
+
+  /* Tamaños */
+  --font-xxs: 8px;
+  --font-xs: 10px;
+  --font-small: 14px;
+  --font-medium: 16px;
+  --font-large: 26px;
+  --font-Extralarge: 42px;
+  --font-Titte: 80px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  font-family: var(--antiqua);
+  color: var(--white2);
+  height: 80px;
+  background: var(--black);
+}
+
+.Logo {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+.list-navbar {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 20px;
+}
+
+.list-navbar a {
+  color: var(--white2);
+  font-size: var(--font-small);
+}
+
+.list-navbar a:hover {
+  border-bottom: 3px solid var(--gris2);
+  color: var(--redd);
+}
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 100%;
+}
+
+.Usuario {
+  border: 3px solid red;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: var(--antiqua);
+  margin-top: 200px;
+  height: 500px;
+  width: 700px;
+}
+
+.Usuario--data {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0;
+  gap: 10px;
+}
+
+.Usuario--data h3 {
+  font-size: var(--font-large);
+}
+.Usuario--Email,
+.Usuario--contraseña {
+  font-size: var(--font-medium);
+  color: var(--redd);
+}
+
+input {
+  width: 550px;
+  border-radius: 5px;
+  border-color: var(--white2);
+  height: 30px;
+  font-family: var(--antiqua);
+  font-size: var(--font-small);
+}
+.Usuario--check input {
+  width: auto;
+}
+
+.Usuario--check label {
+  color: var(--gris);
+  width: auto;
+}
+
+.btn-submit {
+  font-family: var(--antiqua);
+  font-size: var(--font-xs);
+  background-color: var(--redd);
+  color: var(--white);
+  padding: 0 5px;
+  border-radius: 6px;
+}
+
+.Usuario--registro {
+  font-size: var(--font-small);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--black2);
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  margin-top: 115px;
+  gap: 40px;
+}
+
+.logo--footer img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.slogan--footer {
+  font-family: var(--antiqua);
+  color: var(--white);
+  font-size: var(--font-small);
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.legales--footer {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: var(--antiqua);
+  font-size: var(--font-xs);
+  color: var(--white);
+}
+
+.legales--footer h3 {
+  font-size: var(--font-small);
+}
+.legales--footer a {
+  color: var(--white);
+}
+
+/* Mediaqueries */
+
+@media (max-width: 992px) {
+  /* Header */
+  .menu-label {
+    display: flex;
+    order: 2;
+  }
+  .menu-label img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .Navbar {
+    gap: 30px;
+  }
+
+  .list-navbar {
+    position: absolute;
+    top: 80px;
+    width: 80%;
+    background-color: var(--black2);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 30px;
+    border-radius: 0 0 10px 10px;
+    z-index: 2;
+    transform: translateX(200%);
+    transition: all 0.5s ease;
+  }
+  #menu-toggle:checked ~ .list-navbar {
+    transform: translateX(0);
+  }
+
+  /* Main */
+  .Usuario {
+    width: 500px;
+  }
+  input {
+    width: 400px;
+  }
+
+  /* Footer */
+  .slogan--footer,
+  .legales--footer {
+    font-size: var(--font-xs);
+    max-width: 300px;
+  }
+}
+@media (max-width: 640px) {
+  /* footer */
+  .legales--footer {
+    display: none;
+  }
+}

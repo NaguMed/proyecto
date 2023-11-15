@@ -1,0 +1,149 @@
+@media (max-width: 992px) {
+  /* Header */
+  .menu-label {
+    display: flex;
+    order: 2;
+  }
+  .menu-label img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .Navbar {
+    gap: 30px;
+  }
+
+  .list-navbar {
+    position: absolute;
+    top: 80px;
+    width: 80%;
+    background-color: var(--black2);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 30px;
+    border-radius: 0 0 10px 10px;
+    z-index: 2;
+    transform: translateX(200%);
+    transition: all 0.5s ease;
+  }
+  #menu-toggle:checked ~ .list-navbar {
+    transform: translateX(0);
+  }
+
+  /* main */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .herramientas,
+  .Cristaleria,
+  .Bebidas {
+    margin-top: 30px;
+  }
+
+  .herramientas--productos,
+  .Cristaleria--productos,
+  .Bebidas--productos {
+    max-width: 800px;
+  }
+
+  .product-5,
+  .product-6,
+  .product-11,
+  .product-12,
+  .product-17,
+  .product-18 {
+    display: none;
+  }
+  .contacto {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    max-width: 70%;
+  }
+  textarea {
+    width: 70%;
+  }
+
+  /* Footer */
+  .slogan--footer,
+  .legales--footer {
+    font-size: var(--font-xs);
+    max-width: 300px;
+  }
+}
+@media (max-width: 780px) {
+  .tittle {
+    font-size: var(--font-Extralarge);
+  }
+  .menu-label2 {
+    display: flex;
+    order: 2;
+  }
+  .menu-label2 img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .list-product {
+    position: absolute;
+    top: 260px;
+    width: 100%;
+    background-color: var(--red);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 30px;
+    border-radius: 0 0 10px 10px;
+    z-index: 2;
+    transform: translateX(-200%);
+    transition: all 0.5s ease;
+  }
+  #menu-toggle2:checked ~ .list-product {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .presentacion {
+    display: none;
+  }
+
+  .about h2 {
+    font-size: var(--font-medium);
+  }
+  .about p {
+    font-size: var(--font-small);
+  }
+
+  .product-3,
+  .product-4,
+  .product-9,
+  .product-10,
+  .product-15,
+  .product-16 {
+    display: none;
+  }
+  .eventos h2 {
+    font-size: var(--font-medium);
+  }
+  .eventos p {
+    font-size: var(--font-small);
+  }
+  .contacto {
+    width: 500px;
+  }
+  .legales--footer {
+    display: none;
+  }
+}
+@media (max-width: 590px) {
+  .tittle {
+    font-size: var(--font-large);
+  }
+}

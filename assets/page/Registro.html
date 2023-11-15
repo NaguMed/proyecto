@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="/assets/css/registro.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html">
+        <img src="/assets/img/Logo.png" alt="logo" class="Logo" />
+      </a>
+      <nav class="Navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="/assets/img/menu.png" alt="Menu" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="list-navbar">
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="/assets/page/Registro.html">Registrate</a></li>
+          <li><a href="/assets/page/Usuario.html">Acceder</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="Registro">
+        <h2>Registro</h2>
+        <div class="Registro-datos">
+          <h3>Datos Personales</h3>
+          <div class="Registro--Nombre">
+            <p>Nombre y Apellido</p>
+            <input placeholder=" Ingrese su Nombre" type="text" />
+          </div>
+          <div class="Registro--Documento">
+            <p>Documento</p>
+            <input placeholder="Ingrese su DU/LE/LC" type="number" />
+          </div>
+          <div class="Registro--Email">
+            <p>Email</p>
+            <input placeholder=" Ingrese su Email" type="email" />
+          </div>
+          <div class="Registro--contraseña1">
+            <p>Contraseña</p>
+            <input placeholder="Ingrese su contraseña" type="text" />
+          </div>
+
+          <div class="Registro--contraseña2">
+            <p>Repetir Contraseña</p>
+            <input placeholder="Ingrese su contraseña" type="text" />
+          </div>
+          <div class="Registro--telefono">
+            <p>Telefono</p>
+            <input placeholder="Teléfono" type="number" />
+          </div>
+          <div class="Registro--terminos">
+            <p>Politica de Privacidad</p>
+            <input type="checkbox" id="terms" />
+            <label for="terms">Acepto los terminos y Condiciones.</label>
+          </div>
+          <div class="btn">
+            <div>
+              <button type="submit" class="btn-1">Cancelar</button>
+            </div>
+            <div class="submit">
+              <button class="btn-submit" type="submit">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="logo--footer">
+          <img src="/assets/img/Logo.png" alt="Logo" />
+        </div>
+        <div class="slogan--footer">
+          <p>
+            Tu tienda online de productos de coctelería profesional.
+            Herramientas y utensilios de coctelería para el bartender y el
+            barman amateur.
+          </p>
+        </div>
+        <div class="legales--footer">
+          <h3>Legales</h3>
+          <ul>
+            <li><a href="#">Aviso Legal</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Condiciones de Compra</a></li>
+            <li><a href="#">Compromiso con la protección de datos</a></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

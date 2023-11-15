@@ -9,16 +9,20 @@
   </head>
   <body>
     <header>
-      <a href="#">
+      <a href="/index.html">
         <img src="/assets/img/Logo.png" alt="logo" class="Logo" />
       </a>
       <nav class="Navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/img/menu.png" alt="Menu" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="list-navbar">
           <li><a href="#about">Nosotros</a></li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Registrate</a></li>
-          <li><a href="# ">Acceder</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="/assets/page/Registro.html">Registrate</a></li>
+          <li><a href="/assets/page/Usuario.html">Acceder</a></li>
         </ul>
       </nav>
     </header>
@@ -27,11 +31,15 @@
         <h1 class="tittle">La Cueva del Bartender</h1>
       </div>
       <div class="menu-productos">
+        <label for="menu-toggle2" class="menu-label2">
+          <img src="./assets/img/menu.png" alt="Menu2" />
+        </label>
+        <input type="checkbox" id="menu-toggle2" />
         <ul class="list-product">
-          <li><a href="#">Herramientas</a></li>
-          <li><a href="#">Cristaleria</a></li>
+          <li><a href="#Herramientas">Herramientas</a></li>
+          <li><a href="#Cristaleria">Cristaleria</a></li>
           <li><a href="#">Descartables</a></li>
-          <li><a href="#">Bebidas</a></li>
+          <li><a href="#Bebidas">Bebidas</a></li>
           <li><a href="#">Maquinas Especializadas</a></li>
         </ul>
       </div>
@@ -54,7 +62,7 @@
           de bartenders y cocteleros profesionales.
         </p>
       </div>
-      <section class="herramientas">
+      <section id="Herramientas" class="herramientas">
         <div class="herramientas--tittle">
           <h3>Herramientas</h3>
         </div>
@@ -169,7 +177,7 @@
           </div>
         </div>
       </section>
-      <section class="Cristaleria">
+      <section id="Cristaleria" class="Cristaleria">
         <div class="Cristaleria--tittle">
           <h3>Cristaleria</h3>
         </div>
@@ -260,7 +268,7 @@
           </div>
         </div>
       </section>
-      <section class="Bebidas">
+      <section id="Bebidas" class="Bebidas">
         <div class="Bebidas--tittle">
           <h3>Bebidas</h3>
         </div>
@@ -353,7 +361,7 @@
       </section>
       <button class="btn-scroll">Ver Mas</button>
 
-      <section class="eventos">
+      <section id="eventos" class="eventos">
         <h2>Eventos de Coctelería y Asesoramiento</h2>
         <p>
           LA CUEVA DEL BARTENDER cuenta con un equipo altamente cualificado de
@@ -367,33 +375,59 @@
       <section id="contacto">
         <div class="contacto">
           <h3>SOLICITA MÁS INFORMACIÓN</h3>
-          <div>
+          <div class="contacto--Nombre">
             <p>Nombre</p>
             <input placeholder=" Ingrese su Nombre" type="text" />
           </div>
-          <div>
+          <div class="contacto--Email">
             <p>Email</p>
             <input placeholder=" Ingrese su Email" type="email" />
           </div>
-          <div>
+          <div class="contacto--telefono">
             <p>Telefono</p>
             <input placeholder="Teléfono" type="tel" />
           </div>
-          <div class="textarea">
+          <div class="contacto--textarea">
+            <p>Mensaje</p>
             <textarea placeholder="Escribe tu mensaje...."></textarea>
           </div>
-          <div>
-            <button
-              name="submit"
-              type="submit"
-              id="contact-submit"
-              data-submit="...Sending"
+          <div class="contacto--terminos">
+            <p>Politica de Privacidad</p>
+            <input type="checkbox" id="terms" />
+            <label for="terms"
+              >Acepto el tratamiento de mis datos para que se de respuesta a las
+              solicitudes y consultas.</label
             >
-              Enviar
-            </button>
+          </div>
+          <div class="submit">
+            <button class="btn-submit" type="submit">Enviar</button>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="logo--footer">
+          <img src="/assets/img/Logo.png" alt="Logo" />
+        </div>
+        <div class="slogan--footer">
+          <p>
+            Tu tienda online de productos de coctelería profesional.
+            Herramientas y utensilios de coctelería para el bartender y el
+            barman amateur.
+          </p>
+        </div>
+        <div class="legales--footer">
+          <h3>Legales</h3>
+          <ul>
+            <li><a href="#">Aviso Legal</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Condiciones de Compra</a></li>
+            <li><a href="#">Compromiso con la protección de datos</a></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
